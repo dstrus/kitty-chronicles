@@ -1,12 +1,38 @@
-html {
+body, html {
   font-size: 16px;
   font-family: Tahoma, Helvetica, sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+header {
+  height: 40%;
+  background-image: url(img/trio.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+h1 {
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px black;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 article.kitty {
   border-top: 1px solid #999;
   clear: both;
-  margin-bottom: 2rem;
+  margin: 0 1rem 2rem;
+}
+
+article.kitty:first-child {
+  border-top: none;
 }
 
 figure {
